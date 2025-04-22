@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+  
+  font-family: "Poppins", sans-serif;
+  background: url("../public//background.jpg");
+  background-size: cover;
+  background-position: center;
+}
