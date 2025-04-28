@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
-import Sidebar from './Sidebar';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import MessageContainer from './MessageContainer';
-import { useDispatch, useSelector } from 'react-redux';
-import { setSelectedUser } from '../redux/userSlice';
+import Sidebar from './Sidebar';
 
 function Homepage() {
   const { selectedUser } = useSelector((store) => store.user);
   
+
 
   return (
     <div className='flex sm:h-[340px] md:h-[450px] rounded-lg overflow-hidden bg-gray-400/30 backdrop-blur-lg bg-clip-padding'>

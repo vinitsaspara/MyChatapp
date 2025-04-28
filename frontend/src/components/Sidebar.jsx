@@ -1,11 +1,11 @@
-import React, { useState, useMemo } from "react";
-import { ImSearch } from "react-icons/im";
-import OtherUsers from "./OtherUsers";
-import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import React, { useMemo, useState } from "react";
+import toast from "react-hot-toast";
+import { ImSearch } from "react-icons/im";
 import { useDispatch, useSelector } from "react-redux";
-import { setAuthUser, setSelectedUser } from "../redux/userSlice";
+import { useNavigate } from "react-router-dom";
+import { setAuthUser } from "../redux/userSlice";
+import OtherUsers from "./OtherUsers";
 
 function Sidebar() {
   const navigate = useNavigate();

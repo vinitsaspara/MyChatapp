@@ -1,11 +1,10 @@
 import React from "react";
-import SendInput from "./SendInput";
-import Messages from "./Messages";
 import { useSelector } from "react-redux";
+import Messages from "./Messages";
+import SendInput from "./SendInput";
 
 function MessageContainer() {
   const {selectedUser,onlineUsers} = useSelector(store=>store.user);
-  const {messages} = useSelector(store=>store.user);
   
     const isOnline = onlineUsers?.includes(selectedUser._id);
 

@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { MdSend } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { setMessages } from "../redux/messageSlice";
-import useGetMessages from "../hooks/useGetMessages";
 
 function SendInput() {
   const dispatch = useDispatch();
